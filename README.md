@@ -20,17 +20,17 @@ A lightweight Chrome extension that shows you which accounts you follow on Insta
 
 When you're logged into instagram.com, your browser already holds a valid session. This extension leverages your active session cookies to safely query Instagram's internal web endpoints—meaning it never asks for your password and your data never leaves your machine.
 
-**The Logic:**
-1. **Dynamic Metric Profiling:** Fetches your account data to find your exact follower and following counts.
-2. **Synchronized Ingestion:** Fetches both lists (paginated, 50 profiles per batch). 
-3. **Progress Mapping:** Calculates a real-time progress bar percentage based dynamically on your total actual metrics.
-4. **O(1) Matrix Lookup:** Loads your followers into a JavaScript `Set` for instant lookup time complexity, filters your following list against it, and maps out the non-followers.
-
 ## Features
 
 - **100% Zero Friction:** Zero typing required. It safely auto-detects your logged-in username directly from the page state.
 - **Smart Progress Tracking:** A real-time loading bar built on actual account data.
 - **Rate-Limit Safe:** Implements an intentional request-cooldown delay to respect platform safety thresholds.
+- 
+**The Logic:**
+1. **Dynamic Metric Profiling:** Fetches your account data to find your exact follower and following counts.
+2. **Synchronized Ingestion:** Fetches both lists (paginated, 50 profiles per batch). 
+3. **Progress Mapping:** Calculates a real-time progress bar percentage based dynamically on your total actual metrics.
+4. **O(1) Matrix Lookup:** Loads your followers into a JavaScript `Set` for instant lookup time complexity, filters your following list against it, and maps out the non-followers.
 
 ## File Structure
 
