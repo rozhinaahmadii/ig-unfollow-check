@@ -1,4 +1,4 @@
-# IG Unfollow Check
+# Instagram Unfollower Tracker
 
 A lightweight Chrome extension that shows you which accounts you follow on Instagram that don't follow you back, and lets you unfollow them directly from the page. No third-party logins, no shady databases, no external servers. 
 
